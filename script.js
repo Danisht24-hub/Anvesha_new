@@ -1,7 +1,7 @@
 // ─── Google Apps Script Web App URL ────────────────────────────────────────
 // IMPORTANT: Replace this with your deployed Apps Script URL.
 // See README_SHEETS_SETUP.md for step-by-step instructions.
-const SHEET_URL = "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbx8RaR4lWQjwXQwar9Qyzm9Z8hQtXwfVmW5Ce6Hb6_L_xHvP1oHKqiyF54ZjeOgceDk/exec";
 
 // ─── Falling petals ─────────────────────────────────────────────────────────
 function spawnPetal() {
@@ -53,6 +53,9 @@ document.getElementById('regForm').addEventListener('submit', async function (e)
         trackend:         document.getElementById('trackend').value.trim(),
         bgpref:           bgPrefEl ? bgPrefEl.value : '',
         tracknotes:       document.getElementById('tracknotes').value.trim(),
+        bgimage:          (document.querySelector('input[name="bgimage"]:checked') || {}).value || '',
+        bgimagelink:      document.getElementById('bgimagelink').value.trim(),
+        bgimagedesc:      document.getElementById('bgimagedesc').value.trim(),
         rampwalk:         document.getElementById('rampWalk').value,
     };
 
@@ -60,7 +63,7 @@ document.getElementById('regForm').addEventListener('submit', async function (e)
     submittingMsg.style.display = 'block';
 
     try {
-        if (SHEET_URL && SHEET_URL !== "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE") {
+        if (SHEET_URL && SHEET_URL !== "https://script.google.com/macros/s/AKfycbx8RaR4lWQjwXQwar9Qyzm9Z8hQtXwfVmW5Ce6Hb6_L_xHvP1oHKqiyF54ZjeOgceDk/exec") {
             await fetch(SHEET_URL, {
                 method: 'POST',
                 mode: 'no-cors',
