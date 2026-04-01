@@ -2,7 +2,7 @@
 // ─── Google Apps Script Web App URL ────────────────────────────────────────
 // IMPORTANT: Replace this with your deployed Apps Script URL.
 // See README_SHEETS_SETUP.md for step-by-step instructions.
-const SHEET_URL = "https://script.google.com/macros/s/AKfycby2RtGn76ZEjy3tgKUbqoEiwrGONcxR4cf1O2S6vDXWCUnI2YI6klupsI3ppiksDn_-/exec";
+const SHEET_URL = "https://script.google.com/macros/s/AKfycbwNZzw6XwLXwnr2IcDEBYf1a2kSlllAgBvpJbsJBON2PRPBRxdfik10qbg2xkoD9lTlFQ/exec";
 
 // ─── Falling petals ─────────────────────────────────────────────────────────
 function spawnPetal() {
