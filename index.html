@@ -284,6 +284,45 @@
                     <textarea id="tracknotes" placeholder="e.g. fade in at 1:00, loop the chorus, need mic for spoken parts…" style="min-height:80px"></textarea>
                 </div>
 
+                <div class="fsec-label">🖼️ Stage Background Image</div>
+
+                <div class="music-note" style="border-color:rgba(167,139,250,.18);background:rgba(167,139,250,.05);">
+                    <div class="music-note-icon">🎨</div>
+                    <div>Want a specific backdrop projected on stage during your act? Share an image link or describe what you have in mind — a scene from the movie, a colour wash, a poster, etc.</div>
+                </div>
+
+                <div class="field-group">
+                    <label class="field-label">Background Style</label>
+                    <div class="bg-grid">
+                        <label class="bg-card">
+                            <input type="radio" name="bgimage" value="Movie scene">
+                            <div class="bg-inner"><div class="bg-emoji">🎬</div><div class="bg-name">Movie Scene</div></div>
+                        </label>
+                        <label class="bg-card">
+                            <input type="radio" name="bgimage" value="Colour wash">
+                            <div class="bg-inner"><div class="bg-emoji">🌈</div><div class="bg-name">Colour Wash</div></div>
+                        </label>
+                        <label class="bg-card">
+                            <input type="radio" name="bgimage" value="Custom image">
+                            <div class="bg-inner"><div class="bg-emoji">🖼️</div><div class="bg-name">Custom Image</div></div>
+                        </label>
+                        <label class="bg-card">
+                            <input type="radio" name="bgimage" value="No backdrop">
+                            <div class="bg-inner"><div class="bg-emoji">⬛</div><div class="bg-name">No Backdrop</div></div>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label class="field-label" for="bgimagelink">Image Link <span style="font-size:.75rem;color:rgba(253,246,227,.4)">(Google Drive, Imgur, etc.)</span></label>
+                    <input type="url" id="bgimagelink" placeholder="https://drive.google.com/...">
+                </div>
+
+                <div class="field-group">
+                    <label class="field-label" for="bgimagedesc">Describe Your Backdrop</label>
+                    <textarea id="bgimagedesc" placeholder="e.g. The train station scene from DDLJ, warm golden tones, a misty mountain backdrop…" style="min-height:80px"></textarea>
+                </div>
+
                 <div class="fsec-label">Ramp Walk</div>
 
                 <div class="ramp-card" id="rampCard" onclick="toggleRamp()">
