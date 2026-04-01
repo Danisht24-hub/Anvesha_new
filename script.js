@@ -1,3 +1,4 @@
+
 // ─── Google Apps Script Web App URL ────────────────────────────────────────
 // IMPORTANT: Replace this with your deployed Apps Script URL.
 // See README_SHEETS_SETUP.md for step-by-step instructions.
@@ -63,7 +64,7 @@ document.getElementById('regForm').addEventListener('submit', async function (e)
     submittingMsg.style.display = 'block';
 
     try {
-        if (SHEET_URL && SHEET_URL !== "https://script.google.com/macros/s/AKfycbx_s7eOucOX5LTgpUzOa40v0-_nRmg5kBJdiFAHUCXpiGDz0Nhu0i6Kiz_4m0NDkqh7/exec") {
+        if (SHEET_URL && SHEET_URL !== "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE") {
             await fetch(SHEET_URL, {
                 method: 'POST',
                 mode: 'no-cors',
