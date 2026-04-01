@@ -67,6 +67,7 @@ document.getElementById('regForm').addEventListener('submit', async function (e)
         if (SHEET_URL && SHEET_URL !== "YOUR_APPS_SCRIPT_WEB_APP_URL_HERE") {
             await fetch(SHEET_URL, {
                 method: 'POST',
+                mode: 'no-cors',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(payload),
             });
